@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> La 402 - Grupo Musical </title>
+    <meta name="description" content="Grupo acústico asturiano para tocar en cafeterías, bares, bodas y eventos. Tenemos covers de pop/rock, música celta instrumental, bandas sonoras y mucho más. ¡No dudes en contactarnos!">
+    <meta name="keywords" content="grupo, música, acústico, violín, guitarra, cajón flamenco, conciertos">
+    <meta property="og:image" content="https://seoalive.com/wp-content/uploads/2020/04/open-graph.jpg"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/conciertos.css">
+    <link rel="icon" type="image/svg" href="favicon.png"/>
+  </head>
+
+  <body>
+
+    <div id="cajacookies">
+      <div class="col-11 col-lg-8 mx-auto text-center text-lg-start py-5">
+        <p>
+          Para ofrecer las mejores experiencias, utilizamos tecnologías como las cookies para almacenar y/o acceder a la información 
+          del dispositivo. El consentimiento de estas tecnologías nos permitirá procesar datos como el comportamiento de navegación 
+          o las identificaciones únicas en este sitio. No consentir o retirar el consentimiento, puede afectar negativamente a ciertas 
+          características y funciones.
+        </p>
+        <button onclick="aceptarCookies()" class="pull-right btn btn-primary">Aceptar</button>
+        <button onclick="rechazarCookies()" class="pull-right btn btn-secondary ms-2">Rechazar</button>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar-id" class="navbar navbar-expand-lg pt-3 pt-lg-5">
+      <div class="container-fluid">
+        <button id="button-id" class="navbar-toggler" onclick="opacidadMenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#conciertos">CONCIERTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#repertorio">REPERTORIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#el_grupo">EL GRUPO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#multimedia">MULTIMEDIA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div>
+        <h1 data-aos-once="true" data-aos-duration="1000" data-aos="fade-right">La 402</h1>
+        <h2 data-aos-once="true" data-aos-duration="1400" data-aos="fade-right">Grupo Musical</h2>
+        <!-- <p class="social mt-5"><a href="https://www.instagram.com/somosla402"><i class="fab fa-instagram pe-1"></i>  @somosla402 </a></p>
+        <p class="social"><a href="https://www.facebook.com/somosla402"><i class="fab fa-facebook pe-1"></i>  La 402 </a></p> -->
+      </div>
+    </header>
+
+    <!-- Conciertos -->
+    <section id="conciertos" class="section section_conciertos">
+      <section class="conciertos container text-center text-lg-start">
+        <h1 class="pb-4">CONCIERTOS</h1>
+
+        <div class="row">
+
+          <!-- <p>No hay conciertos proximanmente</p> -->
+
+          <div class="mx-auto mx-lg-0 col-11 col-lg-3">
+            <div class="concierto concierto-libros card px-4">
+              <div class="card-body">
+                <h5 class="card-title">Presentación del libro ...</h5>
+                <p class="card-text text-center text-lg-start">Casa de encuentros Santa Inés, Sotrondio</p>
+                <p class="card-text text-center text-lg-start">7 de marzo a las 19:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto mx-lg-0 col-11 col-lg-3">
+            <div class="concierto concierto-feminismo card px-4">
+              <div class="card-body">
+                <h5 class="card-title">8 de marzo</h5>
+                <p class="card-text text-center text-lg-start">Ayuntamiento SMRA, Sotrondio</p>
+                <p class="card-text text-center text-lg-start">8 de marzo a las 12:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto mx-lg-0 col-11 col-lg-3">
+            <div class="concierto concierto-restaurante card px-4">
+              <div class="card-body">
+                <h5 class="card-title">Sidrería Terra Astur El Vasco</h5>
+                <p class="ccard-text text-center text-lg-start">Bulevar El Vasco, Oviedo</p>
+                <p class="ccard-text text-center text-lg-start">12 de marzo a las 12:30</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto mx-lg-0 col-11 col-lg-3">
+            <div class="concierto concierto-andamio card px-4">
+              <div class="card-body">
+                <h5 class="card-title">Reapertura del Museo de la Siderurgia</h5>
+                <p class="card-text text-center text-lg-start">La Felguera</p>
+                <p class="card-text text-center text-lg-start">16 de marzo a las 12:30</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto mx-lg-0 col-11 col-lg-3">
+            <div class="concierto concierto-orilla card px-4">
+              <div class="card-body">
+                <h5 class="card-title">Evento privado</h5>
+                <p class="ccard-text text-center text-lg-start">28 de julio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto mx-lg-0 col-11 col-lg-3">
+            <div class="concierto concierto-violin card px-4">
+              <div class="card-body">
+                <h5 class="card-title">Evento privado</h5>
+                <p class="ccard-text text-center text-lg-start">13 de octubre</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </section>
+
+    <!-- Repertorio -->
+    <section id="repertorio" class="section section_repertorio">
+      <section class="repertorio container text-center text-lg-start">
+        <h1 class="pb-4">REPERTORIO</h1>
+        <p class="col-11 col-lg-12">Tenemos un amplio repertorio de más de 200 temas para amenizar en restaurantes, 
+          cafeterías, bodas y otros tipos de eventos. Por supuesto, siempre estamos encantados de aceptar nuevas propuestas. 
+        </p>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Pop/Rock español</h4>
+            <li>La casa por el tejado</li>
+            <li>Clavado en un bar</li>
+            <li>20 de Abril</li>
+            <li>La flaca</li>
+            <li>No puedo vivir sin ti</li>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Pop/Rock internacional</h4>
+            <li>Sweet child o' mine</li>
+            <li>Take on me</li>
+            <li>Nothing else matters</li>
+            <li>Crazy little thing called love</li>
+            <li>Get back</li>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+            <h4>En asturianu</h4>
+            <li>Aída de la fuente</li>
+            <li>Nos Fondos Hai Carbón</li>
+            <li>Loa Fayeos de Mayo</li>
+            <li>Rondó FEM</li>
+            <li>Matalalluna</li>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Música celta</h4>
+            <li>Busindre Reel</li>
+            <li>Morrison's Jig</li>
+            <li>Drunken sailor</li>
+            <li>O son do ar</li>
+            <li>The Blarney Pilgrim</li>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Bandas sonoras</h4>
+            <li>La vida es bella</li>
+            <li>Braveheart</li>
+            <li>Ghost</li>
+            <li>El último mohicano</li>
+            <li>Titanic</li>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+            <h4>Para bodas</h4>
+            <li>All you need is love</li>
+            <li>Cold little heart</li>
+            <li>Hallelujah</li>
+            <li>Stand by me</li>
+            <li>Halo</li>
+          </div>
+
+        </div>
+        <div class="text-center">
+          <p class="mb-2 text-center">Te dejamos un documento con todo nuestro repertorio</p>
+          <a href="pdf/prueba.pdf" download="Repertorio_La402.pdf" target="_blank"><button class="btn btn-primary">Descargar PDF</button></a>
+        </div>
+      </section>
+    </section>
+
+    <!-- El Grupo -->
+    <section id="el_grupo" class="section section_el_grupo">
+      <section class="el_grupo container text-center text-lg-start">
+        <h1 class="pb-4">EL GRUPO</h1>
+        <p class="col-11 col-lg-12">La 402 se creó a finales de 2018 para participar en un acto en Sobrescobio 
+          contra la violencia machista. Meses después, en febrero de 2019, se le dio el nombre actual a la agrupación 
+          por el número de la cabina donde se ensayó por primera vez. Desde entonces, pasando por actuaciones de diversa índole, 
+          se han ido cultivando nuevas versiones musicales con un estilo cada vez más propio, caracterizado por el uso de violín, cajón, 
+          percusiones, guitarra y voces, con estilos que van desde un pop/rock más comercial hasta músicas más independientes, siempre con 
+          un toque acústico folk.
+        </p>
+
+        <div class="integrante">
+          <h3 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">SOFÍA NEVADO DOMÍNGUEZ</h3>
+          <h5 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">Violín y voz</h5>
+          <hr>
+          <div class="row">
+            <p class="col-11 col-lg-8">
+              Natural de La Felguera, comencé mi andadura musical a los 6 años, en agrupaciones corales. Más tarde, estudié los 
+              grados elemental y profesional de Violín en el Conservatorio Valle del Nalón.
+              <br>
+              Mi formación artística ha pasado también por diversos cursos de teatro, clases de ballet clásico o participación en 
+              talleres de muy diversa índole. 
+              <br><br>
+              Participo en agrupaciones como la Orquesta Langreana de Plectro, la Orquesta de la Universidad de Oviedo o la Orquesta 
+              de Cámara de Siero. También formo parte desde 2011 en el Proyecto Voces Blancas del Nalón, y desde 2020, soy la directora coral. 
+              <br><br>
+              Actualmente estoy realizando el grado profesional de piano en el Conservatorio Valle del Nalón y trabajando como profesora 
+              de Música y Movimiento y de orquesta y coro en la Escuela de Música Itinerante de Siero. 
+              <br><br>
+              Fuera del ámbito musical, soy estudiante del grado en Filosofía en la Universidad de Oviedo y también monitora de ocio y 
+              tiempo libre.
+            </p>
+            <img src="img/El_Grupo/Sofi_1.jpg" class="col-11 col-lg-4 mt-5 mt-lg-0" data-aos-once="true" data-aos-duration="1000" data-aos="fade-left" title="Sofía Nevado Domínguez" alt="Sofía Nevado Domínguez">
+          </div>
+        </div>
+
+        <div class="integrante">
+          <h3 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">DANIELA CORTINA GONZÁLEZ</h3>
+          <h5 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">Guitarra y voz</h5>
+          <hr>
+          <div class="row">
+            <p class="col-11 col-lg-8 order-lg-1">
+              Mi formación musical empezó a los 9 años cuando decidí comenzar mis estudios en el conservatorio del Valle del Nalón 
+              en la especialidad de guitarra. Allí estudié durante 10 años, primero el grado elemental y después el profesional, 
+              al mismo tiempo que formaba parte del Coro de Voces Blancas.
+              <br><br>
+              Con esta agrupación participé en concursos y conciertos tanto nacionales como internacionales, en espacios como 
+              Notre Dame (París) o San Patricio (NY).
+              <br><br>
+              Actualmente soy estudiante de 4º de Filología Española con mínor en asturiano, por lo que suelo encargarme de las cuestiones 
+              lingüísticas del grupo. Como os imaginaréis, también disfruto mucho de la música en asturiano, y recientemente he 
+              colaborado con "Playpresta" en su canal de Youtube versionando algunas de mis canciones favoritas.
+            </p>
+            <img src="img/El_Grupo/Daniela_1.jpg" class="col-11 col-lg-4 mt-5 mt-lg-0 order-lg-0" data-aos-once="true" data-aos-duration="1000" data-aos="fade-right" title="Daniela Cortina González" title="Daniela Cortina González">
+          </div>
+        </div>
+
+        <div class="integrante">
+          <h3 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">DANIEL SÁNCHEZ MARTÍNEZ</h3>
+          <h5 data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">Cajón flamenco y percusiones</h5>
+          <hr>
+          <div class="row">
+            <p class="col-11 col-lg-8">
+              Empecé mi trayectoria musical en la Escuela de Música del Principado de Asturias, en la especialidad de guitarra. Sin embargo,
+              al acabar los 4 años del grado elemental, me apunté sin dudarlo a percusión. En 2021 acabé el grado profesional en el Conservatorio
+              de música Oviedo, obteniendo el premio de fin de grado en mi especialidad.
+              <br><br>
+              Actualmente estoy realizando los estudios de percusión en el CONSMUPA y trabajando como profesor de percusión en
+              la Escuela de Música Divertimento. 
+              <br>
+              También participo en ocasiones con el Coro Voces Blancas del Nalón, la Orquesta Langreana de Plectro, la Orquesta de Cámara de Siero y 
+              la Charanga L'Estruendo.
+              <br><br>
+              He colaborado con agrupaciones musicales como la Banda Sinfónica del Ateneo Musical de Mieres, la Banda Sinfónica de Gijón, la
+              Banda Sinfónica de Avilés y la Charanga Paentamala.
+              <br><br>
+              Al margen de mi carrera musical, soy Técnico Superior de Desarrollo de Aplicaciones Web.
+            </p>
+            <img src="img/El_Grupo/Dani_1.jpg" class="col-11 col-lg-4 mt-5 mt-lg-0" data-aos-once="true" data-aos-duration="1000" data-aos="fade-left" title="Daniel Sánchez Martínez" title="Daniel Sánchez Martínez">
+          </div>
+        </div>
+
+      </section>
+    </section>
+
+
+
+    <section id="multimedia" class="section section_multimedia">
+      <section class="multimedia container text-center text-lg-start">
+        <h1 class="pb-4">MULTIMEDIA</h1>
+
+        
+
+        <h4 class="text-center mt-5">Conciertos</h4>
+        <div id="carousel" class="carousel slide mx-auto col-11 col-lg-8 mt-3 mt-lg-5 carousel-fade" data-bs-ride="carousel" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Carrusel/Carrusel_Conciertos_1.jpg" class="d-block w-100" alt="Concierto en la Feria de Muestras de Gijón 2022" title="Concierto en la Feria de Muestras de Gijón 2022">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Conciertos_2.jpg" class="d-block w-100" alt="Concierto en la Casona de la Montaña" title="Concierto en la Casona de la Montaña">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Conciertos_3.jpg" class="d-block w-100" alt="Concierto en el Pub Friends" title="Concierto en el Pub Friends">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Conciertos_4.jpg" class="d-block w-100" alt="Concierto al aire libre para los amigos" title="Concierto al aire libre para los amigos">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Conciertos_5.jpg" class="d-block w-100" alt="Concierto en el restaurante Parrilla Balbona" title="Concierto en el restaurante Parrilla Balbona">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Conciertos_6.jpg" class="d-block w-100" alt="Concierto benéfico para la asociación Asturias Acoge" title="Concierto benéfico para la asociación Asturias Acoge">
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-center mt-5 pt-5">Bodas</h4>
+        <div id="carousel" class="carousel slide mx-auto col-11 col-lg-8 mt-3 mt-lg-5 carousel-fade" data-bs-ride="carousel" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Carrusel/Carrusel_Bodas_1.jpg" class="d-block w-100" alt="Boda en el Palacio de la Concepción" title="Boda en el Palacio de la Concepción">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Bodas_2.jpg" class="d-block w-100" alt="Boda en el Palacio de la Concepción" title="Boda en el Palacio de la Concepción">
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-center mt-5 pt-5">Nosotros</h4>
+        <div id="carousel" class="carousel slide mx-auto col-11 col-lg-8 mt-3 mt-lg-5 carousel-fade" data-bs-ride="carousel" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Carrusel/Carrusel_Grupo_1.jpg" class="d-block w-100" alt="Nosotros" title="Nosotros">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Carrusel_Grupo_2.jpg" class="d-block w-100" alt="Nosotros" title="Nosostros">
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-center mt-5 pt-5">Vídeos</h4>
+        <div class="col-11 col-lg-8 mx-auto div_iframe mt-3 mt-lg-5" data-bs-ride="carousel" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+          <iframe src="https://www.youtube.com/embed/gxsVcjhY7jA" title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="col-11 col-lg-8 mx-auto div_iframe mt-3 mt-lg-5" data-bs-ride="carousel" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+          <iframe src="https://www.youtube.com/embed/mE6NxDnOVQc" title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="col-11 col-lg-8 mx-auto div_iframe mt-3 mt-lg-5" data-bs-ride="carousel" data-aos-once="true" data-aos-duration="1000" data-aos="fade-up">
+          <iframe src="https://www.youtube.com/embed/ex2WLFU0Pq4" title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+        </div>
+        
+      </section>
+    </section>
+
+
+
+    <footer class="footer mt-auto py-5 bg-dark">
+      <div class="col-11 row text-light py-3 mx-auto">
+
+        <div class="footer-contact text-light col-12 col-xl-4 my-3 my-xl-0 order-0 order-lg-0 text-center text-lg-start">
+          <h5 class="mb-4">¡No dudes en contactarnos!</h5>
+          <p><i class="fab fa-whatsapp pe-1"></i>  (+34) 684 634 081</p>
+          <p><i class="far fa-envelope pe-1"></i>  somosla402@gmail.com</p>
+        </div>
+
+        <div class="footer-contact copyright text-light col-12 col-xl-4 text-start text-xl-center my-3 my-xl-0 order-2 order-lg-1 text-center text-lg-start">
+          <p class="pt-lg-5">©2023 Todos los derechos reservados</p>
+        </div>
+
+        <div class="footer-contact text-light col-12 col-xl-4 text-start text-xl-end my-3 my-xl-0 order-1 order-lg-2 text-center text-lg-start">
+          <h5 class="mb-4">¡Síguenos en redes!</h5>
+          <p class="social"><a href="https://www.instagram.com/somosla402"><i class="fab fa-instagram pe-1"></i>  Instagram </a></p>
+          <p class="social"><a href="https://www.facebook.com/somosla402"><i class="fab fa-facebook pe-1"></i>  Facebook </a></p>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap'); /* Título */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap'); /* Textos */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+/********************************************/
+/** VARIABLES                              **/
+/********************************************/
+
+:root{
+  /* Colores */
+  --color-1: #A75D5D;
+  --color-2: #D3756B;
+  --color-3: #F0997D;
+  --color-4: #FFC3A1;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  /* Tamaños de fuente */
+  --font-xxl: 350%;
+  --font-xl: 200%;
+  --font-l: 150%;
+  --font-m: 120%;
+  --font-s: 100%;
+  --font-xs: 90%;
+
+  /* Grosores de fuente*/
+  --font-wmax: 800;
+  --font-wmin: 600;
+
+  /* Fuentes */
+  --font-init: 'Smooch', cursive;
+  --font-title: 'Merienda', sans-serif;
+  --font-text: 'Questrial', sans-serif;
+
+  /* Transiciones */
+  --transition-mid: 0.4s;
+  --transition-fast: 0.2s;
+
+  /* Borde de esquinas */
+  --border-radius-none: 0px;
+  --border-radius-mid: 0.5rem;
+  --border-radius-big: 50%;
+  --border-radius-small: 0.2rem;
+}
+
+
+/********************************************/
+/** ELEMENTOS ESTRUCTURALES                **/
+/********************************************/
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#cajacookies {
+  font-family: 'Questrial', sans-serif;
+  display: none;
+  background-color: #00000090;
+  color: white;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+#cajacookies button {
+  /* color: black; */
+}
+
+/********************************************/
+/** SCROLLBAR                              **/
+/********************************************/
+
+*::selection {
+  background-color: var(--color-4);
+  color: var(--color-black);
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-black);
+    border: 2px solid var(--color-white);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #1f1f1f;
+    border: 2px solid var(--color-white);
+}
+
+/********************************************/
+/** HEADER Y NAVBAR                        **/
+/********************************************/
+header{
+  background-image:     
+  linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.3)
+  ),url(../img/Grupo_7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar{
+    position: absolute;
+    background-color: transparent;
+    z-index: 10;
+    font-family: var(--font-text);
+    /* height: 6rem; */
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active{
+  border: 0px solid transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("../img/icons/navbarToggler.png");
+}
+
+.navbar-brand:hover{
+  color: var(--color-white);
+}
+
+.nav-link{
+  color: var(--color-white);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover{
+  color: var(--color-4);
+  transition: 0.2s;
+}
+
+header h1, h2{
+    
+  color: var(--color-white);
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header h1{
+  font-size: 12rem;
+  font-family: 'Smooch', cursive;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px var(--color-dark);
+  transform: translate(-30px, 0);
+}
+
+header h2{
+  font-size: 2rem;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px var(--color-dark);
+}
+
+@media only screen and (max-width: 768px) {
+
+  header h1{
+    font-size: 6rem;
+    transform: translate(0, 0);
+  }
+
+  header h2{
+    font-size: 1.5rem;
+  }
+
+}
+
+header div{
+  margin: auto;
+  text-align: center;
+}
+
+.section{
+  font-family: 'Questrial', sans-serif;
+}
+
+header p{
+  font-size: 1.2rem;
+}
+
+/********************************************/
+/** CONCIERTOS                             **/
+/********************************************/
+
+.section_conciertos{
+  background: var(--color-black);
+}
+
+.conciertos{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  color: var(--color-white);
+}
+
+.conciertos p{
+  line-height : 1.8rem;
+  text-align: justify;
+  margin: auto;
+}
+
+.conciertos div{
+  margin-top: 2rem;
+}
+
+.card{
+  background-color: var(--color-black) !important;
+  border: 2px solid var(--color-2) !important;
+  border-radius: 2px !important;
+}
+
+.card-body{
+  /* color: var(--color-black); */
+  margin-top: 4rem !important;
+}
+
+.concierto{
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/********************************************/
+/** REPERTORIO                             **/
+/********************************************/
+
+.repertorio{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.repertorio p{
+  line-height : 1.8rem;
+  text-align: justify;
+  margin: auto;
+}
+
+.repertorio div{
+  margin-top: 2rem;
+}
+
+.repertorio div div{
+  margin-bottom: 5rem;
+  list-style: none;
+}
+
+.btn-primary{
+  border-radius: 10rem;
+  background-color: var(--color-2);
+  border: 1px solid var(--color-2);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  background-color: var(--color-1);
+  border: 1px solid var(--color-1);
+  box-shadow: none !important;
+}
+
+.btn-secondary{
+  color: var(--color-2);
+  border-radius: 10rem;
+  background-color: transparent;
+  border: 1px solid var(--color-2);
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus{
+  color: var(--color-1);
+  background-color: transparent;
+  border: 1px solid var(--color-1);
+  box-shadow: none !important;
+}
+
+
+/********************************************/
+/** EL GRUPO                               **/
+/********************************************/
+
+.section_el_grupo{
+  background: var(--color-black);
+}
+
+.el_grupo{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  color: var(--color-white);
+}
+
+.el_grupo p{
+  line-height : 1.8rem;
+  text-align: justify;
+  margin: auto;
+}
+
+.integrante{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.integrante h5{
+  color: var(--color-2);
+}
+
+hr{
+  margin-bottom: 2rem;
+}
+
+.integrante p{
+  line-height : 1.8rem;
+  text-align: justify;
+  margin: auto;
+  /* letter-spacing: 0.5px; */
+}
+
+.integrante div img{
+  border-radius: 50%;
+  margin: auto;
+}
+
+
+/********************************************/
+/** MULTIMEDIA                             **/
+/********************************************/
+
+.multimedia{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.multimedia p{
+  line-height : 1.8rem;
+  text-align: justify;
+  margin: auto;
+}
+
+iframe{
+  width:100%;
+  height: 30rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+  iframe{
+    height: 12rem;
+  }
+
+}
+
+.carousel{
+
+}
+
+
+/********************************************/
+/** FOOTER                                 **/
+/********************************************/
+.footer{
+  background: var(--color-black) !important;
+  font-family: 'Questrial', sans-serif;
+}
+.footer-contact{
+  letter-spacing: 0.2px;
+}
+
+.social a{
+  color: var(--color-white) !important;
+  text-decoration: none !important;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.social a:hover{
+  color: var(--color-4) !important;
+  transition: 0.2s;
+}
+
+.copyright{
+  font-size: 0.8rem;
+}
+
+
+

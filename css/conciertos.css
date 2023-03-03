@@ -1,0 +1,55 @@
+.concierto-libros{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Fondos/Libros.jpg);
+  }
+
+  .concierto-feminismo{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Fondos/Feminismo.jpg);
+  }
+
+  .concierto-andamio{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Fondos/Andamios.jpg);
+  }
+
+  .concierto-restaurante{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Restaurante.jpg);
+  }
+
+  .concierto-boda{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Boda.jpg);
+  }
+
+  .concierto-violin{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Fondos/Violín.jpg);
+  }
+
+  .concierto-orilla{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5)
+    ),url(../img/Conciertos/Fondos/Orilla.jpg);
+  }
