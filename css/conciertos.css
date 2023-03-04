@@ -3,7 +3,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5)
-    ),url(../img/Conciertos/Fondos/Libros.jpg);
+    ),url(../img/Conciertos/Libros.jpg);
   }
 
   .concierto-feminismo{
@@ -11,7 +11,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5)
-    ),url(../img/Conciertos/Fondos/Feminismo.jpg);
+    ),url(../img/Conciertos/Feminismo.jpg);
   }
 
   .concierto-andamio{
@@ -19,7 +19,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5)
-    ),url(../img/Conciertos/Fondos/Andamios.jpg);
+    ),url(../img/Conciertos/Andamios.jpg);
   }
 
   .concierto-restaurante{
@@ -43,7 +43,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5)
-    ),url(../img/Conciertos/Fondos/Violín.jpg);
+    ),url(../img/Conciertos/Violín.jpg);
   }
 
   .concierto-orilla{
@@ -51,5 +51,5 @@
     linear-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5)
-    ),url(../img/Conciertos/Fondos/Orilla.jpg);
+    ),url(../img/Conciertos/Orilla.jpg);
   }

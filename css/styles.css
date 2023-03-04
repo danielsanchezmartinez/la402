@@ -67,10 +67,6 @@ html, body{
   z-index: 100;
 }
 
-#cajacookies button {
-  /* color: black; */
-}
-
 /********************************************/
 /** SCROLLBAR                              **/
 /********************************************/
@@ -106,7 +102,7 @@ header{
   linear-gradient(
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.3)
-  ),url(../img/Grupo_7.jpg);
+  ),url(../img/Fondo_Horizontal_1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -114,6 +110,19 @@ header{
   display: flex;
   align-items: center;
   height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+  header{
+    background-image:     
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.3)
+    ),url(../img/Fondo_Vertical_1.jpg);
+    background-size: 160%;
+  }
+
 }
 
 .navbar{
@@ -232,16 +241,27 @@ header p{
   border-radius: 2px !important;
 }
 
-.card-body{
-  /* color: var(--color-black); */
-  margin-top: 4rem !important;
-}
-
 .concierto{
   height: 25rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .concierto{
+    height: 12rem;
+  }
+
+  .card-title{
+    font-size: 1.15rem;
+  }
+
+  .card-text{
+    font-size: 0.95rem;
+  }
+
 }
 
 /********************************************/
@@ -369,11 +389,6 @@ iframe{
 
 }
 
-.carousel{
-
-}
-
-
 /********************************************/
 /** FOOTER                                 **/
 /********************************************/
@@ -403,3 +418,18 @@ iframe{
 
 
 
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .conciertos, .repertorio, .el_grupo, .multimedia{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .el_grupo{
+    padding-bottom: 4rem;
+  }
+
+}
